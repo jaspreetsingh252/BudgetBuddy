@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 255 255 255; /* Light background */
+    --foreground: 0 0 0; /* Light foreground */
+    --card: 255 255 255; /* Light card */
+    --card-foreground: 0 0 0; /* Light card text */
+    --primary: 0 0 0; /* Light primary */
+    --primary-foreground: 255 255 255; /* Light primary text */
+    --secondary: 200 200 200; /* Light secondary */
+    --secondary-foreground: 0 0 0; /* Light secondary text */
+    --border: 200 200 200; /* Light border */
+    --input: 240 240 240; /* Light input */
+    --ring: 0 0 0; /* Light ring */
+    --radius: 0.5rem;
+  }
+  
+  .dark {
+    --background: 20 20 20; /* Dark background */
+    --foreground: 255 255 255; /* Dark foreground */
+    --card: 30 30 30; /* Dark card */
+    --card-foreground: 255 255 255; /* Dark card text */
+    --primary: 255 255 255; /* Dark primary */
+    --primary-foreground: 20 20 20; /* Dark primary text */
+    --secondary: 60 60 60; /* Dark secondary */
+    --secondary-foreground: 255 255 255; /* Dark secondary text */
+    --border: 60 60 60; /* Dark border */
+    --input: 40 40 40; /* Dark input */
+    --ring: 255 255 255; /* Dark ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border; /* Apply border color globally */
+  }
+  body {
+    @apply bg-background text-foreground; /* Apply background and text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+}
+
+

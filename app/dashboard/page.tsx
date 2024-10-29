@@ -61,7 +61,7 @@ export default function Dashboard() {
             <div className="text-center py-10">
               <Home className="h-16 w-16 mx-auto text-gray-700" />
               <p className="mt-2 text-sm text-gray-400">No transactions for the selected period</p>
-              <p className="text-xs text-gray-500">Try selecting a different period or add new transactions</p>
+              <p className="text-xs text-gray-500">Try selecting a different period or add new transaction</p>
             </div>
           </div>
         </div>
